@@ -1,56 +1,131 @@
 # The Infinite Dungeon: Adaptive Gamified Learning Platform
 
-[![Live Demo]([https://img.shields.io/badge/Live_Demo-Play_Now-00d2ff?style=for-the-badge&logo=streamlit)](https://infinitydungeon1.streamlit.app/](https://infinitedungeon-ztcq4ozwvmfbxbc2rnf4tl.streamlit.app/))
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Play_Now-00d2ff?style=for-the-badge&logo=streamlit)](https://infinitedungeon-ztcq4ozwvmfbxbc2rnf4tl.streamlit.app/)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
-[![Google Gemini](https://img.shields.io/badge/Powered_by-Google_Gemini-orange.svg?style=flat&logo=google)](https://aistudio.google.com/)
-
-**The Infinite Dungeon** is an intelligent, highly scalable learning system that dynamically adapts educational challenges based on real-time learner performance. By integrating state-of-the-art Large Language Models (LLMs) with a persistent gamified RPG interface, the platform continuously adjusts difficulty, pacing, and feedback to maximize concept mastery and long-term retention.
+[![Powered by Gemini](https://img.shields.io/badge/AI-Google_Gemini-orange.svg?style=flat&logo=google)](https://aistudio.google.com/)
 
 ---
 
-## Table of Contents
-1. [System Architecture & Capabilities](#-system-architecture--capabilities)
-2. [Core Features](#-core-features)
-3. [Technical Stack](#-technical-stack)
-4. [Installation & Setup](#-installation--setup)
-5. [Usage Instructions](#-usage-instructions)
-6. [Directory Structure](#-directory-structure)
+## Author  
+Arpit Singh Sandha
 
 ---
 
-## System Architecture & Capabilities
+## Live Demo  
+https://infinitedungeon-ztcq4ozwvmfbxbc2rnf4tl.streamlit.app/
 
-This project implements a unique **Dual-SDK AI Architecture** to handle distinct computational requirements without hallucination or parsing failures:
+---
 
-1. **Algorithmic Evaluation Engine (Modern `google-genai` SDK):** Utilizes GenAI Code Execution Tools (`types.ToolCodeExecution`) to create a secure sandbox. It evaluates user-submitted Python code by generating hidden edge-case test parameters, running the code, and calculating the algorithmic Time Complexity (Big-O notation).
-2. **Conceptual Assessment Engine (Legacy `google-generativeai` SDK):** Configured strictly with `response_mime_type="application/json"`. It evaluates the semantic complexity of user-requested subjects (rating them from Tier 1 to Tier 6) and generates unique, unrepeated multiple-choice questions natively in JSON format for seamless frontend rendering.
+## Overview
+
+The Infinite Dungeon is an AI-powered gamified learning platform that transforms traditional education into an interactive role-playing experience. The system dynamically adapts question difficulty, pacing, and feedback based on real-time user performance using large language models.
+
+The platform integrates algorithmic problem-solving and conceptual assessment into a unified game environment, improving engagement and long-term retention.
+
+---
+
+## System Architecture
+
+### Dual-AI Engine Design
+
+**1. Algorithmic Evaluation Engine**
+- Built using the modern `google-genai` SDK  
+- Executes user-submitted code in a sandbox environment  
+- Generates hidden edge-case test cases  
+- Evaluates correctness and time complexity (Big-O analysis)  
+
+**2. Conceptual Assessment Engine**
+- Built using `google-generativeai`  
+- Generates structured multiple-choice questions in strict JSON format  
+- Assigns difficulty tiers dynamically (Level 1–6)  
+- Ensures stable and parseable outputs  
 
 ---
 
 ## Core Features
 
-* **Dynamic Difficulty Adjustment (DDA):** The AI calculates the academic complexity of any user-submitted topic (e.g., "Basic Addition" vs. "Quantum Mechanics") and dynamically assigns appropriate enemy tiers, health points, and damage outputs.
-* **Persistent State Management:** Tracks dynamic player attributes—including Level, Experience Points (XP), Health (HP), and Consumable Inventory—across rendering cycles using Streamlit's session state.
-* **Interactive Code IDE:** Integrates `streamlit-ace` for an in-browser code editor featuring syntax highlighting, automated indentation, and real-time execution feedback.
-* **Premium Glassmorphism Interface:** Employs advanced custom CSS to deliver a highly responsive, modern UI/UX with smooth transitions, dynamic progress bars, and localized audio triggers (Base64 injected).
+- Dynamic Difficulty Adjustment based on user performance  
+- AI-based code evaluation with hidden test cases  
+- Multiple-choice combat system for conceptual learning  
+- Player progression system including levels, XP, and inventory  
+- Integrated code editor with syntax highlighting (streamlit-ace)  
+- Responsive UI with advanced styling and animations  
+- Audio feedback for enhanced interaction  
 
 ---
 
-## Tech Stack
+## Technical Stack
 
-* **Frontend Framework:** [Streamlit](https://streamlit.io/)
-* **Code Editor Component:** `streamlit-ace`
-* **AI & LLM Infrastructure:** Google Gemini 2.5 Flash API
-* **Environment Variables:** `python-dotenv`
+- Frontend Framework: Streamlit  
+- Code Editor: streamlit-ace  
+- AI Infrastructure: Google Gemini 2.5 Flash  
+- Environment Management: python-dotenv  
 
 ---
 
-## Installation & Setup
+## Project Structure
 
-### 1. Prerequisites
-Ensure you have Python 3.9 or higher installed on your system.
+```
 
-### 2. Clone the Repository
+Infinite_Dungeon/
+│── assets/
+│── app1.py
+│── requirements.txt
+│── README.md
+│── .gitignore
+
+````
+
+---
+
+## Installation and Setup
+
+### 1. Clone the repository
 ```bash
-git clone [https://github.com/ArpitSandha/Infinite_Dungeon.git](https://github.com/ArpitSandha/Infinite_Dungeon.git)
-cd infinite-dungeon
+git clone https://github.com/ArpitSandha/Infinite_Dungeon.git
+cd Infinite_Dungeon
+````
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Configure environment variables
+
+Create a `.env` file in the root directory:
+
+```env
+GOOGLE_API_KEY=your_api_key_here
+```
+
+### 4. Run the application
+
+```bash
+streamlit run app1.py
+```
+
+---
+
+## Deployment
+
+The application is deployed using Streamlit Community Cloud:
+
+[https://infinitedungeon-ztcq4ozwvmfbxbc2rnf4tl.streamlit.app/](https://infinitedungeon-ztcq4ozwvmfbxbc2rnf4tl.streamlit.app/)
+
+---
+
+## Future Enhancements
+
+* User authentication and profile management
+* Global leaderboard system
+* Multiplayer gameplay features
+* Performance analytics dashboard
+* Database integration (MongoDB or Firebase)
+
+---
+
+## License
+
+This project is licensed under the MIT License.
