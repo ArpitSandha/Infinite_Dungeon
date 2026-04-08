@@ -1,6 +1,6 @@
 # The Infinite Dungeon: Adaptive Gamified Learning Platform
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Play_Now-00d2ff?style=for-the-badge&logo=streamlit)](https://infinitydungeon1.streamlit.app/)
+[![Live Demo]([https://img.shields.io/badge/Live_Demo-Play_Now-00d2ff?style=for-the-badge&logo=streamlit)](https://infinitydungeon1.streamlit.app/](https://infinitedungeon-ztcq4ozwvmfbxbc2rnf4tl.streamlit.app/))
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 [![Google Gemini](https://img.shields.io/badge/Powered_by-Google_Gemini-orange.svg?style=flat&logo=google)](https://aistudio.google.com/)
 
