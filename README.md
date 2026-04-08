@@ -8,7 +8,7 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 1. [System Architecture & Capabilities](#-system-architecture--capabilities)
 2. [Core Features](#-core-features)
 3. [Technical Stack](#-technical-stack)
@@ -18,7 +18,7 @@
 
 ---
 
-## 🏗 System Architecture & Capabilities
+## System Architecture & Capabilities
 
 This project implements a unique **Dual-SDK AI Architecture** to handle distinct computational requirements without hallucination or parsing failures:
 
@@ -27,7 +27,7 @@ This project implements a unique **Dual-SDK AI Architecture** to handle distinct
 
 ---
 
-## 🎯 Core Features
+## Core Features
 
 * **Dynamic Difficulty Adjustment (DDA):** The AI calculates the academic complexity of any user-submitted topic (e.g., "Basic Addition" vs. "Quantum Mechanics") and dynamically assigns appropriate enemy tiers, health points, and damage outputs.
 * **Persistent State Management:** Tracks dynamic player attributes—including Level, Experience Points (XP), Health (HP), and Consumable Inventory—across rendering cycles using Streamlit's session state.
@@ -36,7 +36,7 @@ This project implements a unique **Dual-SDK AI Architecture** to handle distinct
 
 ---
 
-## 💻 Technical Stack
+## Tech Stack
 
 * **Frontend Framework:** [Streamlit](https://streamlit.io/)
 * **Code Editor Component:** `streamlit-ace`
@@ -45,7 +45,7 @@ This project implements a unique **Dual-SDK AI Architecture** to handle distinct
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### 1. Prerequisites
 Ensure you have Python 3.9 or higher installed on your system.
